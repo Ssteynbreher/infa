@@ -1,5 +1,4 @@
 def dog_age_to_human(dog_age):
-  """Преобразует собачий возраст в человеческий с учетом заданной логики."""
   if dog_age < 0:
     return "Ошибка!"
   elif dog_age <= 2:
