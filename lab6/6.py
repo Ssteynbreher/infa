@@ -1,14 +1,13 @@
 import random
 
-def play_guess_number():
-  """Игра "Угадай число"."""
+def f():
   secret = random.randint(1, 10)
-  attempts = 0
+  a = 0
 
   print("Хорошо, я загадал число. Попробуй его отгадать!")
 
   while True:
-    attempts += 1
+    a += 1
     num = int(input("> "))
 
     if num == secret:
@@ -21,11 +20,11 @@ def play_guess_number():
       else:
         print("Загаданное число меньше.")
 
-  print("Количество попыток:", attempts)
+  print("Количество попыток:", a)
 
-  play_again = input("Хотите сыграть снова? (да/нет): ")
-  if play_again.lower() == 'да':
-    play_guess_number()
+  play = input("Хотите сыграть снова? (да/нет): ")
+  if play.lower() == 'да':
+    f()
 
-play_guess_number()
+f()
 
