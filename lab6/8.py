@@ -1,11 +1,11 @@
-binary_number = input("Введите двоичное число: ")
-decimal_number = 0
-degree = 0
+binn = input("Введите двоичное число: ")
+dec = 0
+res = 0
 
-for i in range(len(binary_number) - 1, -1, -1):
- if binary_number[i] == '1':
-  decimal_number += 2 ** degree
- degree += 1
+for i in range(len(binn) - 1, -1, -1):
+ if binn[i] == '1':
+  dec += 2 ** res
+ res += 1
 
-print(f"Десятичное представление числа: {decimal_number}")
+print(f"Десятичное представление числа: ", dec)
     
