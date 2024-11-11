@@ -9,7 +9,6 @@ for i in range(n):
  matrix.append(row)
 for i in range(n):
  matrix[i][i], matrix[i][n - i - 1] = matrix[i][n - i - 1], matrix[i][i]
-# Вывод измененной матрицы
 print("Измененная матрица:")
 for row in matrix:
  print(*row)
