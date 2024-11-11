@@ -17,4 +17,4 @@ def f(treasure_map, alex_coords):
 alex_x = int(input("Введите координату X Александра: "))
 alex_y = int(input("Введите координату Y Александра: "))
 cl_tr = f(treasure_map, [alex_x, alex_y])
-print(f"Координаты ближайшего сокровища: {cl_tr}")
+print("Координаты ближайшего сокровища: ", *(cl_tr))
