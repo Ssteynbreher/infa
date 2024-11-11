@@ -21,4 +21,4 @@ n = int(input("Введите порядок магического квадра
 magic = generate_magic(n)
 
 for row in magic:
-  print(row)
+  print(*row)
