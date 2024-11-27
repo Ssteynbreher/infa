@@ -1,7 +1,6 @@
 import random
 import PySimpleGUI as sg
 sg.theme('GrayGrayGray')
-# Определяем макет интерфейса
 layout = [
     [sg.Image('pngwing.com (1).png', key='-IMAGE-', size=(400, 400))],
     [sg.Text('Введите границы диапазона:')],
@@ -10,7 +9,6 @@ layout = [
     [sg.Button('Сгенерировать', size=(15, 1))],
     [sg.Text('Случайное число:', size=(15, 1)), sg.Input(key='-OUTPUT-', size=(15, 1), disabled=True)], 
 ]
-
 window = sg.Window('Рандом', layout)
 while True:
     event, values = window.read()
