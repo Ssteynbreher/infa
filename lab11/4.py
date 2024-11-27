@@ -8,7 +8,7 @@ layout = [
     [sg.Text('Минимум:', size=(10, 1)), sg.Input(key='-MIN-', size=(15, 2))],
     [sg.Text('Максимум:', size=(10, 1)), sg.Input(key='-MAX-', size=(15, 2))],
     [sg.Button('Сгенерировать', size=(15, 1))],
-    [sg.Text('Случайное число:', size=(15, 1)), sg.Input(key='-OUTPUT-', size=(15, 1), disabled=True)],  # Поле вывода
+    [sg.Text('Случайное число:', size=(15, 1)), sg.Input(key='-OUTPUT-', size=(15, 1), disabled=True)], 
 ]
 
 window = sg.Window('Рандом', layout)
